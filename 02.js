@@ -1,9 +1,6 @@
 const oddEven = (number) => {
-    if (number % 2 == 0) {
-        console.log(`${number} adalah bilangan genap`)
-    } else {
-        console.log(`${number} adalah bilangan ganjil`)
-    }
+    let isEven = number % 2 == 0 ? true : false
+    isEven ? console.log(`${number} adalah bilangan genap`) : console.log(`${number} adalah bilangan ganjil`)
 }
 
 oddEven(10)
