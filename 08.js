@@ -1,14 +1,16 @@
-const readline = require('readline');
-const rl = readline.createInterface(process.stdin, process.stdout);
+const readline = require('readline').createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
 let angka = 0;
 let result = 0;
 
 const inputangka = (prompt, handler) => {
-    rl.question(prompt, input => {
+    readline.question(prompt, input => {
         if (handler(input) !== false) {
             inputangka(prompt, handler);
         } else {
-            rl.close();
+            readline.close();
         }
     });
 }
