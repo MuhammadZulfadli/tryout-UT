@@ -22,6 +22,6 @@ inputangka('Input Angka = ', input => {
         console.log('Result : ' + result);
         return false;
     } else {
-        console.log('Input berupa angka!');
+        console.log('Input hanya berupa angka!');
     }
 });
