@@ -1,21 +1,11 @@
-const readline = require('readline').createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
-let angka = 0;
-let result = 0;
+const prompt = require('prompt-sync')({ sight: true })
 
-const inputangka = (prompt, handler) => {
-    readline.question(prompt, input => {
-        if (handler(input) !== false) {
-            inputangka(prompt, handler);
-        } else {
-            readline.close();
-        }
-    });
-}
+let angka = 0
+let result = 0
+let findangka = false
 
-inputangka('Input Angka = ', input => {
+while (!findangka) {
+    let input = prompt('input angka ')
     if (isFinite(input)) {
         angka = Number(input);
         result += angka;
@@ -26,4 +16,4 @@ inputangka('Input Angka = ', input => {
     } else {
         console.log('Input hanya berupa angka!');
     }
-});
+}
