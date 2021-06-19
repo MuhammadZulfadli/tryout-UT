@@ -1,0 +1,26 @@
+{
+  "name": "tryout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "01.js",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MuhammadZulfadli/tryout-UT.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MuhammadZulfadli/tryout-UT/issues"
+  },
+  "homepage": "https://github.com/MuhammadZulfadli/tryout-UT#readme"
+}
